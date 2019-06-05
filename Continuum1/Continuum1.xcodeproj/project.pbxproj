@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0CE978DC22A85A33006FF7D8 /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE978DB22A85A33006FF7D8 /* PostDetailTableViewController.swift */; };
 		0CE978DE22A85B14006FF7D8 /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE978DD22A85B14006FF7D8 /* AddPostTableViewController.swift */; };
+		0CE978E022A85B9A006FF7D8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE978DF22A85B9A006FF7D8 /* Post.swift */; };
+		0CE978E322A8608B006FF7D8 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE978E222A8608B006FF7D8 /* Comment.swift */; };
+		0CE978E622A86357006FF7D8 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE978E522A86357006FF7D8 /* PostController.swift */; };
 		0CFEE8B622A70A7700FDAF74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFEE8B522A70A7700FDAF74 /* AppDelegate.swift */; };
 		0CFEE8BB22A70A7700FDAF74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFEE8B922A70A7700FDAF74 /* Main.storyboard */; };
 		0CFEE8BD22A70A7800FDAF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CFEE8BC22A70A7800FDAF74 /* Assets.xcassets */; };
@@ -21,6 +24,9 @@
 /* Begin PBXFileReference section */
 		0CE978DB22A85A33006FF7D8 /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
 		0CE978DD22A85B14006FF7D8 /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
+		0CE978DF22A85B9A006FF7D8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0CE978E222A8608B006FF7D8 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		0CE978E522A86357006FF7D8 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
 		0CFEE8B222A70A7700FDAF74 /* Continuum1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFEE8B522A70A7700FDAF74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CFEE8BA22A70A7700FDAF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +51,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CE978E122A85BA0006FF7D8 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CE978E222A8608B006FF7D8 /* Comment.swift */,
+				0CE978DF22A85B9A006FF7D8 /* Post.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CE978E422A86094006FF7D8 /* Model Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0CE978E522A86357006FF7D8 /* PostController.swift */,
+			);
+			path = "Model Controller";
+			sourceTree = "<group>";
+		};
 		0CFEE8A922A70A7700FDAF74 = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +93,8 @@
 				0CFEE8CB22A70EBC00FDAF74 /* Resources */,
 				0CFEE8CC22A70ED500FDAF74 /* Storyboards */,
 				0CFEE8FF22A8553F00FDAF74 /* View Controllers */,
+				0CE978E122A85BA0006FF7D8 /* Model */,
+				0CE978E422A86094006FF7D8 /* Model Controller */,
 			);
 			path = Continuum1;
 			sourceTree = "<group>";
@@ -192,9 +217,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFEE8B622A70A7700FDAF74 /* AppDelegate.swift in Sources */,
+				0CE978E322A8608B006FF7D8 /* Comment.swift in Sources */,
 				0CFEE8FE22A8553100FDAF74 /* PostListTableViewController.swift in Sources */,
 				0CE978DE22A85B14006FF7D8 /* AddPostTableViewController.swift in Sources */,
+				0CE978E622A86357006FF7D8 /* PostController.swift in Sources */,
 				0CE978DC22A85A33006FF7D8 /* PostDetailTableViewController.swift in Sources */,
+				0CE978E022A85B9A006FF7D8 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
