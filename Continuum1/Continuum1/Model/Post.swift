@@ -12,9 +12,12 @@ import CloudKit
 
 class Post {
     
+    
+    let recordID: CKRecord.ID
     var photoData: Data?
     var timestamp: Date
     var caption: String
+    var commentCount: Int
     var comments: [Comment]
     var photo: UIImage? {
         get {
@@ -24,19 +27,20 @@ class Post {
         set {
             photoData = newValue?.jpegData(compressionQuality: 0.5)
         }
-        
+    }
     
         
         // Initializers
-        init(photo: UIImage, comments: [Comment] = [], caption: String, timestamp: Date = Date()) {
-        
+    init(photo: UIImage, comments: [Comment] = [], caption: String, timestamp: Date = Date(), recordID: CKRecord.ID = CKRecord.ID(recordName: UUID().uuidString), commentCount: Int = 0) {
+    
+        self.recordID = recordID
+        self.commentCount = commentCount
         self.comments = comments
         self.caption = caption
         self.timestamp = timestamp
         self.photo = photo
         }
         
-        
-        
-    }
 }
+
+
