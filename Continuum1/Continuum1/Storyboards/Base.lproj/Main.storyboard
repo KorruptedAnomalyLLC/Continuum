@@ -42,6 +42,41 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iuT-Hs-3Zi" id="fHJ-1l-HdC">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="532.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="g9I-Sr-YTj">
+                                            <rect key="frame" x="48" y="27" width="310" height="479"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sNe-ay-Xah">
+                                                    <rect key="frame" x="0.0" y="0.0" width="310" height="310"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="sNe-ay-Xah" secondAttribute="height" multiplier="1:1" id="vdk-b1-g7H"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(Caption)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v0m-FM-GgC">
+                                                    <rect key="frame" x="0.0" y="326" width="310" height="116.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Comments: (Comment Count)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="328-Rb-wbo">
+                                                    <rect key="frame" x="0.0" y="458.5" width="310" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="328-Rb-wbo" firstAttribute="width" secondItem="sNe-ay-Xah" secondAttribute="width" id="bJq-EL-0ve"/>
+                                                <constraint firstItem="v0m-FM-GgC" firstAttribute="width" secondItem="sNe-ay-Xah" secondAttribute="width" id="nTC-1c-qUX"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="g9I-Sr-YTj" secondAttribute="trailing" constant="32" id="VZJ-e8-vsC"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="g9I-Sr-YTj" secondAttribute="bottom" constant="16" id="cj5-0c-HJh"/>
+                                        <constraint firstItem="g9I-Sr-YTj" firstAttribute="top" secondItem="fHJ-1l-HdC" secondAttribute="topMargin" constant="16" id="eMZ-8f-Y73"/>
+                                        <constraint firstItem="g9I-Sr-YTj" firstAttribute="leading" secondItem="fHJ-1l-HdC" secondAttribute="leadingMargin" constant="32" id="jh2-hF-fVa"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <segue destination="DXt-Sa-m7p" kind="show" id="xaH-ld-6LU"/>
