@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CE978DC22A85A33006FF7D8 /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE978DB22A85A33006FF7D8 /* PostDetailTableViewController.swift */; };
+		0CE978DE22A85B14006FF7D8 /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE978DD22A85B14006FF7D8 /* AddPostTableViewController.swift */; };
 		0CFEE8B622A70A7700FDAF74 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFEE8B522A70A7700FDAF74 /* AppDelegate.swift */; };
 		0CFEE8BB22A70A7700FDAF74 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFEE8B922A70A7700FDAF74 /* Main.storyboard */; };
 		0CFEE8BD22A70A7800FDAF74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CFEE8BC22A70A7800FDAF74 /* Assets.xcassets */; };
 		0CFEE8C022A70A7800FDAF74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CFEE8BE22A70A7800FDAF74 /* LaunchScreen.storyboard */; };
 		0CFEE8CA22A70A9400FDAF74 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CFEE8C922A70A9400FDAF74 /* CloudKit.framework */; };
+		0CFEE8FE22A8553100FDAF74 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CFEE8FD22A8553100FDAF74 /* PostListTableViewController.swift */; };
+		0CFEE90122A8557E00FDAF74 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFEE90022A8557E00FDAF74 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CE978DB22A85A33006FF7D8 /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
+		0CE978DD22A85B14006FF7D8 /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
 		0CFEE8B222A70A7700FDAF74 /* Continuum1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CFEE8B522A70A7700FDAF74 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CFEE8BA22A70A7700FDAF74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -23,6 +29,8 @@
 		0CFEE8C122A70A7800FDAF74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0CFEE8C722A70A9100FDAF74 /* Continuum1.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Continuum1.entitlements; sourceTree = "<group>"; };
 		0CFEE8C922A70A9400FDAF74 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		0CFEE8FD22A8553100FDAF74 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		0CFEE90022A8557E00FDAF74 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,7 @@
 		0CFEE8A922A70A7700FDAF74 = {
 			isa = PBXGroup;
 			children = (
+				0CFEE90022A8557E00FDAF74 /* Default-568h@2x.png */,
 				0CFEE8B422A70A7700FDAF74 /* Continuum1 */,
 				0CFEE8B322A70A7700FDAF74 /* Products */,
 				0CFEE8C822A70A9400FDAF74 /* Frameworks */,
@@ -60,6 +69,7 @@
 				0CFEE8C722A70A9100FDAF74 /* Continuum1.entitlements */,
 				0CFEE8CB22A70EBC00FDAF74 /* Resources */,
 				0CFEE8CC22A70ED500FDAF74 /* Storyboards */,
+				0CFEE8FF22A8553F00FDAF74 /* View Controllers */,
 			);
 			path = Continuum1;
 			sourceTree = "<group>";
@@ -89,6 +99,16 @@
 				0CFEE8BE22A70A7800FDAF74 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0CFEE8FF22A8553F00FDAF74 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0CE978DB22A85A33006FF7D8 /* PostDetailTableViewController.swift */,
+				0CFEE8FD22A8553100FDAF74 /* PostListTableViewController.swift */,
+				0CE978DD22A85B14006FF7D8 /* AddPostTableViewController.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFEE8C022A70A7800FDAF74 /* LaunchScreen.storyboard in Resources */,
+				0CFEE90122A8557E00FDAF74 /* Default-568h@2x.png in Resources */,
 				0CFEE8BD22A70A7800FDAF74 /* Assets.xcassets in Resources */,
 				0CFEE8BB22A70A7700FDAF74 /* Main.storyboard in Resources */,
 			);
@@ -171,6 +192,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CFEE8B622A70A7700FDAF74 /* AppDelegate.swift in Sources */,
+				0CFEE8FE22A8553100FDAF74 /* PostListTableViewController.swift in Sources */,
+				0CE978DE22A85B14006FF7D8 /* AddPostTableViewController.swift in Sources */,
+				0CE978DC22A85A33006FF7D8 /* PostDetailTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +343,7 @@
 				CODE_SIGN_ENTITLEMENTS = Continuum1/Continuum1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
-				INFOPLIST_FILE = Continuum1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Continuum1/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,7 +362,7 @@
 				CODE_SIGN_ENTITLEMENTS = Continuum1/Continuum1.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5Z9AZ3J86W;
-				INFOPLIST_FILE = Continuum1/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Continuum1/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
